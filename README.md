@@ -3,5 +3,5 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
- <a href= https://doug-melo.github.io/html_css/exercícios/ex001/index.html target="_blank"> 
+ <a href= "https://doug-melo.github.io/html_css/exercícios/ex001/index.html" target="_blank"> 
  Executar o exercício 001 </a>
