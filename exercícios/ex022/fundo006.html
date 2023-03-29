@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixado na tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; 
-            /* cover = cobre toda a tela com cortes ou contain = imagen 100% exibida sem cortes*/
+            /*
+              background-color: black;
+              background-image: url(imagens/wallpaper002.jpg);
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
+            */
+            
+            /* 
+              cover = cobre toda a tela com cortes ou 
+              contain = imagen 100% exibida sem cortes
+            */
+
+            /*
+              shorthand - background
+              color > image > position > repeat > [size] > attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
@@ -32,6 +46,16 @@
             Teste de imagem de fundo
         </h1>
         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita laudantium facere officiis minima quod molestiae et deserunt iusto ipsum. Facere minima totam quod eaque ipsum accusamus aliquam quibusdam aut!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim molestiae provident facere quasi ratione! Obcaecati nisi assumenda veritatis a quas, fuga numquam maiores unde voluptatem, doloremque quo accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita laudantium facere officiis minima quod molestiae et deserunt iusto ipsum. Facere minima totam quod eaque ipsum accusamus aliquam quibusdam aut!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim molestiae provident facere quasi ratione! Obcaecati nisi assumenda veritatis a quas, fuga numquam maiores unde voluptatem, doloremque quo accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita laudantium facere officiis minima quod molestiae et deserunt iusto ipsum. Facere minima totam quod eaque ipsum accusamus aliquam quibusdam aut!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim molestiae provident facere quasi ratione! Obcaecati nisi assumenda veritatis a quas, fuga numquam maiores unde voluptatem, doloremque quo accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita laudantium facere officiis minima quod molestiae et deserunt iusto ipsum. Facere minima totam quod eaque ipsum accusamus aliquam quibusdam aut!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim molestiae provident facere quasi ratione! Obcaecati nisi assumenda veritatis a quas, fuga numquam maiores unde voluptatem, doloremque quo accusamus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita laudantium facere officiis minima quod molestiae et deserunt iusto ipsum. Facere minima totam quod eaque ipsum accusamus aliquam quibusdam aut!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim molestiae provident facere quasi ratione! Obcaecati nisi assumenda veritatis a quas, fuga numquam maiores unde voluptatem, doloremque quo accusamus.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita laudantium facere officiis minima quod molestiae et deserunt iusto ipsum. Facere minima totam quod eaque ipsum accusamus aliquam quibusdam aut!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima temporibus enim molestiae provident facere quasi ratione! Obcaecati nisi assumenda veritatis a quas, fuga numquam maiores unde voluptatem, doloremque quo accusamus.
         </p>
