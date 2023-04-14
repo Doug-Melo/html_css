@@ -12,11 +12,18 @@
             font-family: Arial, Helvetica, sans-serif;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot{
             background-color: grey;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky; /* função para fixar o cabeçalho */
+            top: -1px;
+            background-color: gray;
         }
         caption{
             font-family: Arial, Helvetica, sans-serif;
@@ -25,10 +32,10 @@
             padding: 10px;
         }
 
-        tbody > tr:nth-child(even){ /*even ou 2n = par*/
+        tbody > tr:nth-child(even){ /* even ou 2n = par */
             background-color: white;
         }
-        tbody > tr:nth-child(odd){  /* odd ou 2n-1 = impar*/
+        tbody > tr:nth-child(odd){  /* odd ou 2n-1 = impar */
             background-color: lightgray;
         }
         
@@ -243,8 +250,7 @@
 
         <tfoot>
             <tr>
-                <th></th>
-                <th scope="row">Total de Habitantes</th>
+                <th scope="row" colspan="2">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
 
