@@ -17,10 +17,17 @@
         input text: acrescenta a caixa de dados do usuário.
         input submit: acrescenta botão de enviar. 
     -->
-    <form action="">
-        <p>nome: <input type="text" name="nome" id="nome"></p>
+    <!--
+        action = ação realizada pelo submit "para onde os dados são enviados"
+        label = etique para identificar a relação com o elemento 
+        name = mais útil com HTML e PHP
+        id = mais útil com HTML e JavaScript
+    -->
+    <form action="cadastro.php" autocomplete="off">
 
-        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><label for="inome">nome:</label>  <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
 
         <p><input type="submit" value="enviar"></p>
     </form>
