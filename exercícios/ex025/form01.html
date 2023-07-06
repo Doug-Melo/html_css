@@ -13,17 +13,23 @@
 <body>
     <h1>Meu Primeiro Formulário</h1>
     <!-- 
-        Formulário básico: nome e sobrenome
-        input text: acrescenta a caixa de dados do usuário.
-        input submit: acrescenta botão de enviar. 
+        > Formulário básico: nome e sobrenome
+        > input text: acrescenta a caixa de dados do usuário.
+        > input submit: acrescenta botão de enviar. 
     -->
     <!--
-        action = ação realizada pelo submit "para onde os dados são enviados"
-        label = etique para identificar a relação com o elemento 
-        name = mais útil com HTML e PHP
-        id = mais útil com HTML e JavaScript
+        > action = ação realizada pelo submit "para onde os dados são enviados"
+        > autocomplte = liga ou desliga o peenchimento automático
+        > label = etique para identificar a relação com o elemento 
+        > name = mais útil com HTML e PHP
+        > id = mais útil com HTML e JavaScript
     -->
-    <form action="cadastro.php" autocomplete="off">
+    <!--
+        method:
+        > GET = método padrão, dados do formulário estão visíveis na URL
+        > POST = dados do formulárIo estão ocultos na URL
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off"> 
 
         <p><label for="inome">nome:</label>  <input type="text" name="nome" id="inome"></p>
 
