@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+
+    <!--
+        step: configura a quantidade de casas decimasis os valores serão inceridos na caixa.
+    -->
+    <!--
+        value: dado de referencia para o usuário.
+          obs: dados no input month, date, time são apenas como exemplo.
+    -->
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="20" autocomplete="username" placeholder="nome completo">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="nota" id="inota" required min="0" max="10" placeholder="0 a 10" step="0.5" value="5">
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2023-07">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2023-07-12">
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora" value="22:35">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+</html>
